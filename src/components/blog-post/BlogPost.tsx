@@ -5,12 +5,12 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 import styles from './style';
 
-interface Props {
+interface BlogProps {
   classes: any;
   data: any;
 }
 
-const BlogPost = ({ classes, data }: Props) => (
+const BlogPost = ({ classes, data }: BlogProps) => (
   <div className={classes.container}>
     {data.heroImage ? (
       <GatsbyImage

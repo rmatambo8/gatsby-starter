@@ -9,7 +9,9 @@ const useBlogPosts = () => {
             node {
               title
               author {
-                name
+                ... on ContentfulAuthor {
+                  name
+                }
               }
               publishDate
               body {
